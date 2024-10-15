@@ -133,7 +133,7 @@ nav#header a#logo img:hover {
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .card {
@@ -218,6 +218,7 @@ nav#header a#logo img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 36px;
 }
 
 .uiverse {
@@ -284,3 +285,49 @@ svg:hover .tooltip {
     color: #ffffff;
 }
 
+/*texto e imagems*/
+.conteudo2 {
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.texto {
+    width: 40%;
+}
+
+.texto button {
+    position: relative;
+    background: #ffc506;
+    color: #000;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 25px;
+    border: 0px;
+}
+
+.texto button:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+.imagems {
+    width: 40%;
+}
+
+.imagems img {
+    width: 455px;
+    border-radius: 20px;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
