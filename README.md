@@ -1,2 +1,2 @@
 # APEX
-Projeto de faculdade
+Projeto de faculdade mais avançado e concreto
