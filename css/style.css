@@ -13,6 +13,8 @@ body {
     display: block;
 }
 
+
+/*header*/
 header {
     float: left;
     display: block;
@@ -111,8 +113,9 @@ nav#header a#logo img {
 nav#header a#logo img:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
 }
-/*Final do header*/
+/*header*/
 
+/*Configuração parao para todos os cards e bloco de conteudo*/
 .conteudo {
     float: left;
     display: block;
@@ -168,6 +171,7 @@ nav#header a#logo img:hover {
     border-radius: 10px;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 5px;
 }
 
 .card button {
@@ -186,7 +190,7 @@ nav#header a#logo img:hover {
     background-color: #ffc506;
     color: #1e1e2b;
 }
-/*Configuração parao para todos os cards*/
+/*Configuração parao para todos os cards e bloco de conteudo*/
 
 /*Imagens*/
 .card#artigos {
@@ -212,8 +216,9 @@ nav#header a#logo img:hover {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*Fim das imagens*/
+/*Imagens*/
 
+/*Botão muito louco*/
 .button {
     display: flex;
     align-items: center;
@@ -284,6 +289,7 @@ svg:hover .tooltip {
     background-color: #000;
     color: #ffffff;
 }
+/*Botão muito louco*/
 
 /*texto e imagems*/
 .conteudo2 {
@@ -330,4 +336,82 @@ svg:hover .tooltip {
     width: 455px;
     border-radius: 20px;
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+}
+/*texto e imagems*/
+
+/*Comentarios*/
+.comentarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: left;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 36px;
+}
+
+.comentario {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.estrelas .card {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    background-color: #fff;
+    padding: 1em;
+    box-shadow: 20px 20px 60px #bebebe;
+    border-radius: 10px;
+}
+
+.estrelas:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+}
+  
+.estrelas:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+}
+  
+.estrelas:not(:checked) > label:before {
+    content: '★';
+}
+  
+.estrelas > input:checked + label:hover,
+.estrelas > input:checked + label:hover ~ label,
+.estrelas > input:checked ~ label:hover,
+.estrelas > input:checked ~ label:hover ~ label,
+.estrelas > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+}
+  
+.estrelas:not(:checked) > label:hover,
+.estrelas:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+}
+  
+.estrelas > input:checked ~ label {
+    color: #ffa723;
+}
+/*Comentarios*/
+
+/*Footer*/
+footer {
+    float: left;
+    display: block;
+    width: 100%;
+
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
