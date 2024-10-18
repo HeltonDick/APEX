@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="register_toggle">
+        <div class="slider">
+            <form class="form" method="post">
+                <span class="TITULO">Login</span>
+                <div class="form_control">
+                    <input type="text" class="input" required="">
+                    <label class="label">Usuario</label>
+                </div>
+                <div class="form_control">
+                    <input type="password" class="input" required="">
+                    <label class="label">Senha</label>
+                </div>
+                <button>Login</button>
+        
+                <span class="bottom_text">Não tem uma conta?
+                    <label for="register_toggle" class="swtich">se inscreva</label>
+                </span>
+            </form>
+
+            <form class="form">
+                <span class="title">inscrever-se</span>
+                <div class="form_control">
+                    <input type="text" class="input" required="">
+                    <label class="label">Usuario</label>
+                </div>
+                <div class="form_control">
+                    <input type="email" class="input" required="">
+                    <label class="label">Email</label>
+                </div>
+                <div class="form_control">
+                    <input type="password" class="input" required="">
+                    <label class="label">Senha</label>
+                </div>
+                <button>inscrever-se</button>
+                <span class="bottom_text">Já tem uma conta?
+                    <label for="register_toggle" class="swtich">logar</label> 
+                </span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
