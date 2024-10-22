@@ -305,6 +305,7 @@ svg:hover .tooltip {
     width: 40%;
 }
 
+/*TALVEZ EU APAGUE ESSE BOTOES INUTEIS*/
 .texto button {
     position: relative;
     background: #ffc506;
@@ -327,6 +328,7 @@ svg:hover .tooltip {
     background: #000;
     color: #ffffff;
 }
+/*TALVEZ EU APAGUE ESSE BOTOES INUTEIS*/
 
 .imagems {
     width: 40%;
@@ -445,6 +447,12 @@ footer p {
     justify-content: center;
     overflow: hidden;
     transition-duration: 1s;
+}
+/* Ajuda*/
+.containerZero:hover {
+    background-color: #f0c025;
+    transition-duration: .5s;
+    border-radius: 50px;
 }
 /* instagram*/
 .containerOne:hover {

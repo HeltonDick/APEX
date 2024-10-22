@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0%;
+    height: 100vh;
+    font-family: roboto;
+    background-image: repeating-radial-gradient(circle at center center, rgb(31, 31, 31) 0px, rgb(35, 35, 35) 33px,rgb(26, 26, 26) 33px, rgb(26, 26, 26) 79px,rgb(20, 20, 20) 79px, rgb(20, 20, 20) 88px); background-size: 56px 56px;
+    backdrop-filter: blur(3px);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*header*/
+header {
+    float: left;
+    display: block;
+    width: 100%;
+
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 36px;
+}
+
+nav#header {
+    float: left;
+    display: block;
+    width: 100%;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav#header ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav#header ul li {
+    display: inline-block;
+}
+
+nav#header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: relative;
+
+    position: relative;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+nav#header ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #ffc506;
+    transition: 0.5s ease;
+}
+
+nav#header ul li a:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+}
+
+nav#header ul li a:hover::before {
+    width: 100%;
+}
+
+nav#header ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffc506;
+    transition: 0.4s ease;
+    z-index: -1;
+}
+
+nav#header a#logo {
+    float: left;
+    display: block;
+    transition: all 0.2s;
+}
+
+nav#header a#logo:hover {
+    transform: scale(1.2);
+}
+
+nav#header a#logo img {
+    width: 80px;
+    border-radius: 200px;
+    transition: all 0.5s;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+nav#header a#logo img:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 1.5px;
+}
+/*header*/
+
+
+/*Configuração parao conteudo*/
+.conteudo {
+    float: left;
+    display: block;
+    width: 100%;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 36px;
+    border-radius: 20px;
+}
+
+.conteudo .conteudo2 {
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.conteudo .conteudo2 .texto {
+    width: 43%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+}
+
+.conteudo .conteudo2 .imagem {
+    float: left;
+    width: 40%;
+}
+
+.conteudo .conteudo2 .imagem img {
+    width: 455px;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/*Configuração parao conteudo*/
+
+/*Footer*/
+footer {
+    float: left;
+    display: block;
+    width: 100%;
+
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+footer p {
+    display: flex;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-top: 26.5px;
+}
+
+.social{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    float: right;
+    padding: 10px;
+}
+  
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+/* Ajuda*/
+.containerZero:hover {
+    background-color: #f0c025;
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+/* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+  
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .5s;
+    border-radius: 50px;
+}
+  
+.socialSvg {
+    width: 17px;
+}
+  
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+  
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+}
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

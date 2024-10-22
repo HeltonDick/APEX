@@ -12,27 +12,27 @@
     <div class="container">
         <input type="checkbox" id="register_toggle">
         <div class="slider">
-            <form class="form" method="post">
+            <form action="index.html" class="form" method="post" id="loginForm">
                 <span class="TITULO">Login</span>
                 <div class="form_control">
-                    <input type="text" class="input" required="">
-                    <label class="label">Usuario</label>
+                    <input type="email" id="email" class="input" required="">
+                    <label class="label">E-mail</label>
                 </div>
                 <div class="form_control">
-                    <input type="password" class="input" required="">
+                    <input type="password" id="password" class="input" required="">
                     <label class="label">Senha</label>
                 </div>
-                <button>Login</button>
+                <button type="logar">Login</button>
         
                 <span class="bottom_text">Não tem uma conta?
                     <label for="register_toggle" class="swtich">se inscreva</label>
                 </span>
             </form>
 
-            <form class="form">
+            <form class="form" action="index.html" id="register">
                 <span class="title">inscrever-se</span>
                 <div class="form_control">
-                    <input type="text" class="input" required="">
+                    <input type="name" class="input" required="">
                     <label class="label">Usuario</label>
                 </div>
                 <div class="form_control">
@@ -43,12 +43,14 @@
                     <input type="password" class="input" required="">
                     <label class="label">Senha</label>
                 </div>
-                <button>inscrever-se</button>
+                <button type="registrar">inscrever-se</button>
                 <span class="bottom_text">Já tem uma conta?
                     <label for="register_toggle" class="swtich">logar</label> 
                 </span>
             </form>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

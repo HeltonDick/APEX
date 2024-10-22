@@ -11,12 +11,13 @@ body {
 }
 
 .container {
-    width: 300px;
-    position: relative;
-    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    color: white;
-    background-color: #858585;
 }
   
 .container .slider {
@@ -45,9 +46,10 @@ body {
 }
   
 .titulo {
+    margin-bottom: 20px;
+    color: #333;
     text-align: center;
-    font-weight: 700;
-    font-size: 2em;
+    font-weight: 700px;
 }
   
 form .form_control {
@@ -69,21 +71,13 @@ form .form_control .label {
 }
   
 form .form_control .input {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    padding: 0.5rem;
-    font-size: 0.75rem;
-    border-radius: 5px;
+    width: 93%;
+    color: #000;
     transition: box-shadow ease 0.2s;
-    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
-}
-  
-form .form_control .input:focus,
-form .form_control .input:valid {
-    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
   
 form .form_control .input:focus + .label,
@@ -93,19 +87,19 @@ form .form_control .input:valid + .label {
   
 form button {
     width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
+    padding: 10px;
+    background-color: #333;
     color: #fff;
-    padding: 0.5rem;
-    font-size: 0.75rem;
-    border-radius: 5px;
-    transition: box-shadow ease 0.1s;
-    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-  
-form button:active {
+
+form button:hover {
     box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 3px 3px 4px #0e0e0e, inset -3px -3px 4px #5f5e5e;
+    background-color: #555;
 }
   
 .bottom_text {

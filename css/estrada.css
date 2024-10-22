@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    font-family: roboto;
+    background-image: repeating-radial-gradient(circle at center center, rgb(31, 31, 31) 0px, rgb(35, 35, 35) 33px,rgb(26, 26, 26) 33px, rgb(26, 26, 26) 79px,rgb(20, 20, 20) 79px, rgb(20, 20, 20) 88px); background-size: 56px 56px;
+    backdrop-filter: blur(3px);
+}
+
+/*Trabalhando no side bar*/
+.sidebar {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffa723;
+    color: black;
+    width: 450px;
+    border-radius: 0px 10px 10px 0px;
+    overflow: auto;
+}
+
+.sidebar .titulo {
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar .titulo h1 {
+    margin: 0;
+}
+
+.sidebar hr {
+    width: 95%;
+    color: red;
+    size: 50px;
+}
+
+.sidebar .progresso {
+    border-radius: 20px;
+    width: 90%;
+    text-align: center;
+    margin-left: 20px;
+
+    background: rgb(67,139,26);
+    background: -moz-linear-gradient(90deg, rgba(67,139,26,1) 50%, rgba(66,186,16,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(67,139,26,1) 50%, rgba(66,186,16,1) 100%);
+    background: linear-gradient(90deg, rgba(67,139,26,1) 50%, rgba(66,186,16,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#438b1a",endColorstr="#42ba10",GradientType=1);
+
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.sidebar .estrada {
+    padding: 5px;
+    font-size: 25px;
+}
+
+.sidebar .estrada ul {
+    list-style: square;
+}
+
+.sidebar .estrada ul li {
+    padding: 6px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+/*Trabalhando no side bar*/
+
+/*Trabalhando no chack mark*/
+.material-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    font-size: large;
+}
+  
+.material-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.checkmark {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+  
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #50808e;
+    border-color: #69a297;
+}
+  
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+  
+.material-checkbox input[type="checkbox"]:focus ~ .checkmark {
+    box-shadow: 0 0 0 2px #a3c9a8;
+}
+  
+.material-checkbox:hover input[type="checkbox"] ~ .checkmark {
+    border-color: #84b59f;
+}
+  
+.material-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+  
+.material-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+    border-color: #4d4d4d;
+}
+/*Trabalhando no chack mark*/
+
+/*Usuario sidebar*/
+.sidebar .usuario {
+    display: flex;
+    float: left;
+    align-items: center;
+    padding: 18px;
+}
+
+.sidebar .usuario .texto p#nome {
+    font-size: larger;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar .usuario .texto p#menor {
+    margin: 0px;
+    padding: 0px;
+    font-size: smaller;
+    color: #4d4d4d;
+}
+
+.sidebar .usuario .imagem img {
+    width: 50px;
+    border-radius: 100%;
+    margin-right: 18px;
+}
+/*Usuario sidebar*/
+
+/*Conteudo*/
+.conteudo {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 70%;
+    background-color: #dddddd;
+    height: 92vh;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: auto;
+}
+
+.conteudo .texto {
+    float: left;
+    width: 70%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.conteudo .imagemDi {
+    float: left;
+    display: flex;
+    width: 20%;
+}
+
+.conteudo .imagemDi img {
+    width: 250px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.conteudo .texto2 {
+    float: left;
+    width: 68%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo .imagemEs {
+    float: left;
+    display: flex;
+    margin-right: 30px;
+}
+
+.conteudo .imagemEs img {
+    width: 250px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.conteudo .botoes {
+    display: flex;
+    align-items: end;
+    align-content: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.conteudo .botoes button {
+    position: relative;
+    background: #e2e2e2;
+    color: #000;
+    border-radius: 100px;
+    display: flex;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 0px;
+    padding: 5px;
+}
+
+.conteudo .botoes button:hover {
+    background-color: #ffc506;
+    transform: scale(1.5);
+}

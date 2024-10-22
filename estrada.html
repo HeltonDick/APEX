@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrada</title>
+
+    <link rel="stylesheet" href="css/estrada.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="titulo">
+            <h1>Seu caminho ao sucesso</h1>
+        </div>
+        <hr>
+        <div class="progresso" id="progresso"></div>
+        <div class="estrada">
+            <ul>
+                <li>
+                    <label class="material-checkbox">
+                        <input type="checkbox" class="task" onclick="atualizarProgrsso()">
+                        <span class="checkmark"></span>
+                        Entendendo sua Situação Financeira
+                    </label>
+                    <ul>
+                        <li>
+                            Orçamento
+                        </li>
+                        <li>
+                            Reserva de Emergência
+                        </li>
+                        <li>
+                            Gestão de Dívidas
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label class="material-checkbox">
+                        <input type="checkbox" class="task" onclick="atualizarProgrsso()">
+                        <span class="checkmark"></span>
+                        Defina seus Objetivos de Investimento
+                    </label>
+                    <ul>
+                        <li>
+                            Curto prazo (1-3 anos)
+                        </li>
+                        <li>
+                            Médio prazo (3-7 anos)
+                        </li>
+                        <li>
+                            Longo prazo (7+ anos)
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label class="material-checkbox">
+                        <input type="checkbox" class="task" onclick="atualizarProgrsso()">
+                        <span class="checkmark"></span>
+                        Conheça os Principais Conceitos de Investimento
+                    </label>
+                    <ul>
+                        <li>
+                            Renda Fixa x Renda Variável
+                        </li>
+                        <li>
+                            Risco x Retorno
+                        </li>
+                        <li>
+                            Diversificação
+                        </li> 
+                        <li>
+                            Inflação e Juros Compostos
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label class="material-checkbox">
+                        <input type="checkbox" class="task" onclick="atualizarProgrsso()">
+                        <span class="checkmark"></span>
+                        Estude os Tipos de Investimentos Disponíveis
+                    </label>
+                    <ul>
+                        <li>
+                            Títulos de Renda Fixa
+                        </li>
+                        <li>
+                            Ações
+                        </li>
+                        <li>
+                            Fundos de Investimento
+                        </li>
+                        <li>
+                            Fundos Imobiliários
+                        </li>
+                        <li>
+                            Criptomoedas
+                        </li>
+                        <li>
+                            Previdência Privada
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="usuario">
+            <div class="imagem">
+                <img src="img/Helton Dick.jpg" alt="imagem do usuario">
+            </div>
+            <div class="texto">
+                <p id="nome">Helton Gabriel Dick</p>
+                <p id="menor">heltondick123@gmail.com</p>
+                <p id="menor">Saldo: <bold><i>$$$</i></bold></p>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="conteudo">
+        <h1 id="titulo1" style="text-align: center;">▶Entendendo sua situação financeira</h1>
+        <div class="botoes">
+            <button onclick="anterior(0)" id="anterior"><img src="img/arrow-left-circle.svg" alt=""></button>
+            <button onclick="proximo(0)" id="proximo"><img src="img/arrow-right-circle.svg" alt=""></button>
+        </div>
+        
+        <!--
+        <div id="situacao">
+            <div class="texto">
+                <p>
+                    Começando pelo básico antes de começar a investir, é essencial ter clareza sobre suas finanças pessoais, isto é, entender sua Situação Financeira. Para aprender sobre sua situação financeira, você precisa seguir alguns passos essenciais para entender como seu dinheiro está sendo administrado, identificar áreas de melhoria e estabelecer uma base sólida antes de começar a investir ou traçar grandes objetivos
+                    <br>
+                    <br>
+                    <b>Identifique todas as fontes de renda:</b> Liste todos os seus ganhos mensais, como salário, trabalhos extras, pensões, rendimentos de investimentos ou qualquer outra fonte de receita.
+                    <br>
+                    <br>
+                    <b>Renda fixa x renda variável:</b> Entenda se sua renda é fixa (como um salário estável) ou variável (como comissões ou freelance), pois isso influencia como você deve planejar suas finanças.
+                    <br>
+                    <br>
+                    <b>Classifique as despesas:</b> Divida suas despesas em categorias, como: Aluguel, transporte, alimentação, contas de energia, etc, sendo as essenciais e as não ecenciais, Lazer, compras, refeições fora de casa.
+                    <br>
+                    <br>
+                    <b>Compare receita e despesa:</b> Veja se está gastando mais do que ganha ou se sobra dinheiro no final do mês.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/situação financeira.png" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/contagem.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    <b>Estabeleça limites:</b> Com base no que você gasta, defina limites para cada categoria. Por exemplo, X% para moradia, Y% para lazer, etc.
+                    <br>
+                    <br>
+                    <b>Use a regra 50/30/20 como referência:</b><br>
+                    <i>50% da renda para necessidades essenciais.</i><br>
+                    <i>30% para desejos ou lazer.</i><br>
+                    <i>20% para poupança/investimentos ou pagar dívidas.</i>
+                    <br>
+                    <br>
+                    <b>Defina o tamanho da sua reserva:</b> O ideal é ter de 3 a 6 meses de despesas essenciais guardados para emergências (desemprego, imprevistos de saúde, etc.).
+                    <br>
+                    <br>
+                    <b>Escolha onde guardar:</b> A reserva de emergência deve ser mantida em investimentos de alta liquidez e baixo risco, como uma conta de poupança ou Tesouro Selic.
+                    <br>
+                    <br>
+                    <b>Revise suas finanças mensalmente:</b> Verifique se você está dentro do orçamento, se as dívidas estão sob controle e se está conseguindo poupar. Ajuste seu planejamento conforme necessário.
+                    <br>
+                    <br>
+                    <b>Ajuste o orçamento conforme a vida muda:</b> Mudanças de emprego, aumento de despesas ou novas metas financeiras exigem que o orçamento seja revisado.
+                </p>
+            </div>
+        </div>
+        
+        <div id="objetivos" style="display: none;">
+            <div class="texto">
+                <p>
+                    Entender por que você quer investir é crucial para escolher os investimentos certos. Definir objetivos de investimento é uma etapa crucial para garantir que seus investimentos estejam alinhados com suas metas financeiras de curto, médio e longo prazo. Seguir um processo claro e estruturado ajuda a criar um plano adequado para suas necessidades e perfil de risco.
+                    <br>
+                    <br>
+                    Para começar, é essencial que seus objetivos sejam bem definidos. Evite metas vagas como "quero ser rico" ou "quero investir". Em vez disso, defina metas específicas com base em suas necessidades e aspirações.
+                    <br>
+                    <b>Para que você está investindo?</b> (Aposentadoria, comprar uma casa, educação dos filhos, etc.) <b>Quanto dinheiro você precisa para atingir esse objetivo?</b> <b>Em quanto tempo você precisa alcançar essa meta?</b>
+                    <br>
+                    <br>
+                    Uma vez que tenha clareza sobre suas metas, o próximo passo é classificá-las de acordo com o prazo em que deseja alcançá-las. O horizonte de tempo é importante porque influencia o tipo de investimento que você deve escolher.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/objetivos.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/data.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    <b>Curto prazo (1-3 anos):</b> Metas que você deseja alcançar dentro desse período, como a compra de um carro ou uma viagem. Para essas metas, é recomendável usar investimentos de baixo risco e alta liquidez, como renda fixa e Tesouro Direto.
+                    <br>
+                    <br>
+                    <b>Médio prazo (3-7 anos):</b> Metas como dar entrada em um imóvel, fazer uma reforma ou começar um negócio. Aqui, você pode assumir um pouco mais de risco, talvez combinando renda fixa com um pouco de renda variável.
+                    <br>
+                    <br>
+                    <b>Longo prazo (mais de 7 anos):</b> Objetivos de longo prazo, como aposentadoria ou garantir a educação dos filhos. Para essas metas, você pode assumir mais risco, investindo em ativos como ações e fundos imobiliários, que têm maior potencial de retorno ao longo do tempo.
+                </p>
+            </div>
+            <div class="texto">
+                <p>
+                    Uma vez que seus objetivos estão definidos, você precisa calcular quanto dinheiro será necessário para alcançá-los consideram dois principais fatores.
+                    <br>
+                    <br>
+                    <b>Inflação:</b> O valor de hoje pode não ser suficiente daqui a alguns anos. Use uma calculadora de inflação para ajustar o valor da sua meta.
+                    <br>
+                    <b>Retorno dos Investimentos:</b> Estime qual taxa de retorno seus investimentos precisarão oferecer para que você alcance sua meta dentro do prazo. Para isso, é importante conhecer o tipo de ativo no qual está investindo e o retorno histórico esperado.
+                    <br>
+                    <br>
+                    Entendendo seu perfil investidor. Seu perfil de investidor é uma combinação da sua tolerância ao risco, do seu conhecimento financeiro e da sua situação atual de vida (idade, situação financeira, responsabilidades, etc.). Ele ajuda a definir como você vai distribuir seus investimentos entre diferentes tipos de ativos.
+                    <br>
+                    <br>
+                    <b>Conservador:</b> Prefere segurança, aceitando rendimentos menores em troca de menos risco. Foca mais em renda fixa, títulos de baixo risco e fundos conservadores.
+                    <br>
+                    <b>Moderado:</b> Está disposto a correr algum risco em troca de retornos maiores. Pode combinar renda fixa com ações e fundos multimercado.
+                    <br>
+                    <b>Agressivo:</b> Tolera mais risco e busca altos retornos, mesmo com a possibilidade de perdas significativas. Investe em ações, criptomoedas e outros ativos voláteis.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/valor.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/contagem.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    Agora que você já sabe o prazo, o valor necessário e o seu perfil de investidor, é hora de escolher os ativos adequados para cada objetivo.
+                    <br>
+                    <br>
+                    <b>Curto prazo:</b> Escolha investimentos mais seguros, como Tesouro Selic, CDBs com liquidez diária, ou fundos de renda fixa. Esses investimentos são menos voláteis e garantem que o dinheiro estará disponível quando necessário.
+                    <br>
+                    <br>
+                    <b>Médio prazo:</b> Para esses objetivos, você pode diversificar mais, combinando renda fixa com alguns ativos de renda variável, como fundos multimercado ou fundos imobiliários, dependendo da sua tolerância ao risco.
+                    <br>
+                    <br>
+                    <b>Longo prazo:</b> No longo prazo, você pode buscar ativos de maior risco e maior potencial de retorno, como ações, fundos de índice (ETFs) ou fundos de previdência privada. Eles têm maior chance de crescimento ao longo do tempo.
+                    <br>
+                    <br>
+                    À medida que sua vida financeira muda (novos empregos, aumento de salário, novos compromissos), é importante revisar seus objetivos e ajustar seus investimentos de acordo.
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="texto">
+                <p>
+                    Definir como e quanto você vai investir regularmente é tão importante quanto escolher o tipo de investimento. Considere:
+                    <br>
+                    <br>
+                    <b>Aportes únicos:</b> Colocar um valor grande de uma vez em um investimento.
+                    <br>
+                    <br>
+                    <b>Aportes mensais (ou periódicos):</b> Investir uma quantia fixa todo mês (estratégia conhecida como "dollar-cost averaging"), o que ajuda a reduzir o impacto da volatilidade do mercado.
+                    <br>
+                    <br>
+                    <b>Reinvestimento de Rendimentos:</b> Sempre que receber juros, dividendos ou outras formas de rendimentos, reinvista-os para aproveitar o poder dos juros compostos.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/quantiainvestida.jpg" alt="">
+            </div>
+        </div>
+        -->
+
+        <div class="conceitos">
+            <div class="texto">
+                 <p>
+                    Aprender os principais conceitos de investimento é fundamental para tomar decisões financeiras mais informadas e seguras. Esses conceitos ajudam a entender como os diferentes tipos de investimentos funcionam, os riscos envolvidos e as estratégias que podem ser adotadas para atingir seus objetivos financeiros.
+                    <br>
+                    <br>
+                    <b>Renda Fixa:</b> São investimentos que possuem regras de rentabilidade definidas no momento da aplicação. Exemplos incluem títulos do governo (como o Tesouro Direto), CDBs, LCIs, e debêntures. A renda fixa é geralmente menos volátil, sendo indicada para quem busca segurança e previsibilidade.
+                    <br>
+                    <b>Características:</b>
+                    Rentabilidade previsível, menor risco em comparação com renda variável, Utilizado para objetivos de curto e médio prazo.
+                    <br>
+                    <br>
+                    <b>Renda Variável:</b> São investimentos cujo retorno não é garantido e depende das condições do mercado, como ações, fundos imobiliários, e criptomoedas. Eles têm maior potencial de retorno, mas também envolvem mais riscos.
+                    <br>
+                    <b>Características:</b>
+                    Retorno variável, podendo ser maior ou menor maior risco, mas com possibilidade de retornos mais altos, recomendado para quem tem maior tolerância ao risco e objetivos de longo prazo.
+                 </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/conceitos.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/riscoretorno.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    <b>Risco:</b> É a possibilidade de perder dinheiro em um investimento. Quanto maior o risco, maior a possibilidade de perda, mas também maior o potencial de retorno.
+                    <br>
+                    <b>Baixo risco:</b> Normalmente associado à renda fixa. Exemplos incluem Tesouro Selic e CDBs de bancos grandes.
+                    <br>
+                    <b>Alto risco:</b> Associado à renda variável, como ações, criptomoedas e derivativos.
+                    <br>
+                    <br>
+                    <b>Retorno:</b> Refere-se ao lucro ou rendimento que o investimento gera. O retorno pode ser fixo (definido previamente, como em títulos de renda fixa) ou variável (como nos lucros das ações).
+                    <br>
+                    <b>Relação risco-retorno:</b> Geralmente, quanto maior o retorno esperado, maior o risco que você estará assumindo.
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="texto">
+                <p>
+                    <b>Liquidez:</b> É a facilidade e a velocidade com que um investimento pode ser convertido em dinheiro sem perder valor. Quanto maior a liquidez, mais rápido você pode acessar seu dinheiro.
+                    <br>
+                    <br>
+                    <b>Alta liquidez:</b> Investimentos que podem ser resgatados facilmente, como Tesouro Selic ou contas de poupança.
+                    <br>
+                    <br>
+                    <b>Baixa liquidez:</b> Investimentos que podem levar mais tempo para serem convertidos em dinheiro, como imóveis ou títulos de renda fixa de longo prazo.
+                    <br>
+                    <br>
+                    <b>Diversificação:</b> É a prática de distribuir seu dinheiro em diferentes tipos de investimentos para reduzir o risco. Ao diversificar, você diminui a chance de perder todo o capital em um único investimento, já que os ativos reagem de maneira diferente às oscilações de mercado.
+                    <br>
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/converter.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
