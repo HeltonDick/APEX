@@ -32,6 +32,82 @@ function atualizarProgrsso() {
 }
 
 // TROCA DE CONTEUDO
+// Variável global para manter a posição atual
+var indexPosi = 0;
+
+// Função para avançar o conteúdo
+function proximo() {
+    var conteudo1 = document.getElementById("situacao");
+    var conteudo2 = document.getElementById("objetivos");
+    var conteudo3 = document.getElementById("conceitos");
+    var conteudo4 = document.getElementById("tipos");
+
+    // Avançar indexPosi, mas não deixar passar do limite
+    if (indexPosi < 2) {
+        indexPosi++;
+    }
+
+    // Atualizar conteúdo com base no indexPosi
+    switch (indexPosi) {
+        case 1:
+            document.getElementById("titulo1").innerHTML = "▶Definindo seus objetivos de investimento";
+            conteudo1.style.display = "none";
+            conteudo2.style.display = "block";
+            conteudo3.style.display = "none";
+            conteudo4.style.display = "none";
+            break;
+        case 2:
+            document.getElementById("titulo1").innerHTML = "▶Conheça os Principais Conceitos de Investimento";
+            conteudo1.style.display = "none";
+            conteudo2.style.display = "none";
+            conteudo3.style.display = "block";
+            conteudo4.style.display = "none";
+            break;
+        case 3:
+            document.getElementById("titulo1").innerHTML = "▶Estudando Os Tipos De Investimento";
+            conteudo1.style.display = "none";
+            conteudo2.style.display = "none";
+            conteudo3.style.display = "none";
+            conteudo4.style.display = "block";
+    }
+}
+
+// Função para voltar o conteúdo
+function anterior() {
+    var conteudo1 = document.getElementById("situacao");
+    var conteudo2 = document.getElementById("objetivos");
+    var conteudo3 = document.getElementById("conceitos");
+    var conteudo4 = document.getElementById("tipos");
+
+    // Reduzir indexPosi, mas não deixar passar do limite
+    if (indexPosi > 0) {
+        indexPosi--;
+    }
+
+    // Atualizar conteúdo com base no indexPosi
+    switch (indexPosi) {
+        case 0:
+            document.getElementById("titulo1").innerHTML = "▶Entendendo Sua Situação Atual";
+            conteudo1.style.display = "block";
+            conteudo2.style.display = "none";
+            conteudo3.style.display = "none";
+            break;
+        case 1:
+            document.getElementById("titulo1").innerHTML = "▶Definindo seus objetivos de investimento";
+            conteudo1.style.display = "none";
+            conteudo2.style.display = "block";
+            conteudo3.style.display = "none";
+            break;
+        case 3:
+            document.getElementById("titulo1").innerHTML = "▶Estudando Os Tipos De Investimento";
+            conteudo1.style.display = "none";
+            conteudo2.style.display = "none";
+            conteudo3.style.display = "none";
+            conteudo4.style.display = "block";
+    }
+}
+
+/*
 function proximo(indexPosi) {
     var conteudo1 = document.getElementById("situacao");
     var conteudo2 = document.getElementById("objetivos");
@@ -40,15 +116,21 @@ function proximo(indexPosi) {
     console.log(conteudo1);
     console.log(conteudo2);
     console.log(conteudo3);
-
-    indexPosi ++;
+ 
+    indexPosi++;
+    console.log(indexPosi);
     switch(indexPosi) {
-
         case 1:
             document.getElementById("titulo1").innerHTML="▶Definindo seus objetivos de investimento"
             conteudo1.style.display="none"
             conteudo2.style.display="block"
             conteudo3.style.display="none"
+        case 2:
+            document.getElementById("titulo1").innerHTML="▶Conheça os Principais Conceitos de Investimento"
+            conteudo1.style.display="none"
+            conteudo2.style.display="none"
+            conteudo3.style.display="block"
+            
     }
 }
 
@@ -61,12 +143,20 @@ function anterior(indexPosi) {
     console.log(conteudo2);
     console.log(conteudo3);
 
-    indexPosi --;
+    indexPosi--;
+    console.log(indexPosi);
     switch(indexPosi) {
         case -1:
+            document.getElementById("titulo1").innerHTML="▶Definindo seus objetivos de investimento"
             conteudo1.style.display="block"
             conteudo2.style.display="none"
             conteudo3.style.display="none"
+        case -2:
+            document.getElementById("titulo1").innerHTML="▶Conheça os Principais Conceitos de Investimento"
+            conteudo1.style.display="none"
+            conteudo2.style.display="none"
+            conteudo3.style.display="block"
+            
     }
 }
 

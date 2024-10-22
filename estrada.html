@@ -120,11 +120,11 @@
     <div class="conteudo">
         <h1 id="titulo1" style="text-align: center;">▶Entendendo sua situação financeira</h1>
         <div class="botoes">
-            <button onclick="anterior(0)" id="anterior"><img src="img/arrow-left-circle.svg" alt=""></button>
-            <button onclick="proximo(0)" id="proximo"><img src="img/arrow-right-circle.svg" alt=""></button>
+            <button onclick="anterior()" id="anterior"><img src="img/arrow-left-circle.svg" alt=""></button>
+            <button onclick="proximo()" id="proximo"><img src="img/arrow-right-circle.svg" alt=""></button>
         </div>
         
-        <!--
+        
         <div id="situacao">
             <div class="texto">
                 <p>
@@ -268,9 +268,8 @@
                 <img src="img/quantiainvestida.jpg" alt="">
             </div>
         </div>
-        -->
 
-        <div class="conceitos">
+        <div id="conceitos" style="display: none;">
             <div class="texto">
                  <p>
                     Aprender os principais conceitos de investimento é fundamental para tomar decisões financeiras mais informadas e seguras. Esses conceitos ajudam a entender como os diferentes tipos de investimentos funcionam, os riscos envolvidos e as estratégias que podem ser adotadas para atingir seus objetivos financeiros.
@@ -324,10 +323,215 @@
                     <br>
                     <b>Diversificação:</b> É a prática de distribuir seu dinheiro em diferentes tipos de investimentos para reduzir o risco. Ao diversificar, você diminui a chance de perder todo o capital em um único investimento, já que os ativos reagem de maneira diferente às oscilações de mercado.
                     <br>
+                    <br>
+                    <br>
                 </p>
             </div>
             <div class="imagemDi">
                 <img src="img/converter.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/perfilinvestidor.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    <b>Juros Compostos</b> é o conceito de ganhar rendimentos sobre os rendimentos anteriores, o que faz seu dinheiro crescer exponencialmente ao longo do tempo. Quanto mais tempo o investimento ficar rendendo, maior será o impacto dos juros compostos.
+                    <br>
+                    <b>Exemplo:</b> Se você investe R$ 1.000 a uma taxa de 10% ao ano, no primeiro ano você terá R$ 1.100. No segundo ano, os juros de 10% serão calculados sobre os R$ 1.100, e assim por diante.
+                    <br>
+                    <br>
+                    <b>Inflação:</b> Refere-se ao aumento dos preços ao longo do tempo, que corrói o poder de compra do dinheiro. Quando você investe, é importante que seu retorno supere a inflação para que o seu dinheiro não perca valor.
+                    <br>
+                    <b>Investimentos indexados à inflação:</b> Alguns títulos, como o Tesouro IPCA, garantem rendimentos que acompanham ou superam a inflação.
+                    <br>
+                    <br>
+                    <b>Alocação de Ativos:</b> É a estratégia de distribuir seu capital entre diferentes tipos de ativos, como renda fixa, renda variável, imóveis e outros, com base em seu perfil de risco e objetivos. A alocação correta pode maximizar seus retornos enquanto controla o risco.
+                    <br>
+                    <b>xExemplo:</b> Alocar 70% do seu dinheiro em renda fixa e 30% em ações, se você tiver um perfil moderado.
+                    <br>
+                    <br>
+                    <b>Rentabilidade Nominal:</b> É o retorno bruto que seu investimento gerou, sem considerar o impacto da inflação.
+                    <br>
+                    <b>Rentabilidade Real:</b> É o retorno ajustado pela inflação, ou seja, quanto seu investimento realmente rendeu em termos de poder de compra.
+                    <br>
+                    <b>Exemplo:</b> Se o seu investimento rendeu 10% e a inflação foi de 6%, sua rentabilidade real foi de apenas 4%.
+                </p>
+            </div>
+            <div class="texto">
+                <p>
+                    <b>Taxa Selic:</b> É a taxa básica de juros da economia brasileira e influencia diretamente os investimentos de renda fixa. Quando a Selic está alta, a rentabilidade dos investimentos em renda fixa também tende a subir, e o contrário acontece quando ela está baixa.
+                    <br>
+                    <b>Impacto nos investimentos:</b> A Selic alta favorece títulos de renda fixa, enquanto a Selic baixa pode tornar investimentos em renda variável mais atraentes.
+                    <br>
+                    <br>
+                    <b>Fundos de Investimento:</b> São carteiras coletivas geridas por um gestor, que investe o dinheiro dos cotistas em diversos ativos (ações, renda fixa, imóveis, etc.). Cada fundo tem sua estratégia e seu perfil de risco.
+                    <br>
+                    <b>Tipos de fundos:</b>
+                    <br>
+                    <b>Fundos de renda fixa:</b> Investem em títulos de renda fixa.
+                    <br>
+                    <b>Fundos multimercado:</b> Misturam renda fixa, ações e outros ativos.
+                    <br>
+                    <b>Fundos de ações:</b> Focados exclusivamente em ações.
+                    <br>
+                    <br>
+                    <b>Dividendos:</b> São a parte dos lucros que uma empresa distribui aos seus acionistas. Investir em ações de empresas que pagam dividendos regulares pode ser uma boa estratégia para gerar renda passiva.
+                    <br>
+                    <b>Juros sobre Capital Próprio:</b> É outra forma de remuneração aos acionistas, usada por empresas brasileiras. Assim como os dividendos, também oferece uma forma de rendimento ao investidor.
+                    <br>
+                    <br>
+                    <b>Imposto de Renda:</b> Alguns investimentos estão sujeitos à tributação, como ações, fundos de investimento e renda fixa. É importante entender como funciona a alíquota para evitar surpresas.
+                    <br>
+                    <b>Exemplo:</b> No Tesouro Direto, a alíquota do IR varia de 22,5% a 15%, dependendo do tempo de aplicação.
+                    <br>
+                    <b>Taxas de Corretagem e Administração:</b> Além do imposto, é importante considerar as taxas cobradas pelas corretoras, como taxas de administração em fundos e corretagem na compra e venda de ações.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/juros.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="tipos" style="display: none;">
+            <div class="texto">
+                <p>
+                    <b>Poupança:</b> Um dos investimentos mais tradicionais e populares no Brasil, a poupança é uma conta bancária que gera rendimentos baixos e com liquidez diária.
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>Baixa rentabilidade:</b> A rentabilidade da poupança é limitada, principalmente em cenários de juros baixos.
+                    <br>
+                    <b>Segurança:</b> Garantida pelo Fundo Garantidor de Créditos (FGC) para saldos até R$ 250.000 por instituição financeira.
+                    <br>
+                    <b>Liquidez:</b> Alta liquidez, pois o dinheiro pode ser sacado a qualquer momento.
+                    <br>
+                    <b>Indicado para:</b> Quem busca segurança e facilidade, mas não é recomendado como forma principal de investimento devido à baixa rentabilidade.
+                    <br>
+                    <br>
+                    <b>Tesouro Direto:</b> Programa de investimentos do governo brasileiro que permite que pessoas físicas comprem títulos públicos pela internet.
+                    <br>
+                    <b>Tesouro Selic:</b> Título atrelado à taxa Selic, com alta liquidez e indicado para reserva de emergência.
+                    <br>
+                    <b>Tesouro IPCA+:</b> Título atrelado à inflação (IPCA), que protege o poder de compra ao longo do tempo.
+                    <br>
+                    <b>Tesouro Prefixado:</b> Título que paga uma taxa de juros fixa, independentemente das condições econômicas futuras.
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>Baixo risco:</b> Garantido pelo governo, considerado o ativo mais seguro do país.
+                    Rentabilidade variada: Pode ser fixa, indexada à inflação ou atrelada à Selic.
+                    <br>
+                    <b>Liquidez:</b> Alta, embora não imediata (resgates são feitos em D+1).
+                    <br>
+                    <b>Indicado para:</b> Investidores conservadores e para metas de curto a longo prazo.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/pupança.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/cbd.jpg" alt="cbd">
+            </div>
+            <div class="texto2">
+                <p>
+                    <b>CBD(Certificado de Depósito Bancário):</b> Títulos de renda fixa emitidos por bancos para captar dinheiro em troca de pagar juros ao investidor.
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>Rentabilidade:</b> Pode ser pré-fixada, pós-fixada (atrelada ao CDI), ou indexada à inflação.
+                    <br>
+                    <b>Risco:</b> Baixo, pois também é garantido pelo FGC até o limite de R$ 250.000 por instituição.
+                    <br>
+                    <b>Liquidez:</b> Alguns CDBs têm liquidez diária, enquanto outros têm prazo de carência.
+                    <br>
+                    <b>Indicado para:</b> Quem busca maior rentabilidade do que a poupança, mantendo a segurança.
+                    <br>
+                    <br>
+                    <b>LCI (Letra de Crédito Imobiliário) e LCA (Letra de Crédito do Agronegócio):</b> São títulos de renda fixa emitidos por instituições financeiras para financiar os setores imobiliário (LCI) e agrícola (LCA).
+                    <br>
+                    Características:
+                    <br>
+                    <b>Isenção de IR:</b> Não há cobrança de Imposto de Renda sobre os rendimentos, o que aumenta a rentabilidade líquida.
+                    <br>
+                    <b>Garantia FGC:</b> Assim como CDBs, são garantidos pelo FGC até R$ 250.000.
+                    <br>
+                    <b>Rentabilidade:</b> Pode ser atrelada ao CDI, prefixada ou indexada à inflação.
+                    <br>
+                    <b>Liquidez:</b> Alguns oferecem liquidez diária, mas muitos têm prazo de carência.
+                    <br>
+                    <b>Indicado para:</b> Investidores que buscam investimentos de renda fixa com isenção de IR e prazos médios.
+                    <br>
+                    <br>
+                    <b>Fundos de Investimento:</b> São fundos administrados por gestores que investem o dinheiro dos cotistas em diferentes ativos, como ações, renda fixa, câmbio, entre outros.
+                    <br>
+                </p>
+            </div>
+            <div class="texto">
+                <p>
+                    <b>Fundos de Investimento:</b> São fundos administrados por gestores que investem o dinheiro dos cotistas em diferentes ativos, como ações, renda fixa, câmbio, entre outros.
+                    <br>
+                    <b>Tipos de fundos:</b>
+                    <br>
+                    <b>Fundos de Renda Fixa:</b> Investem predominantemente em títulos de renda fixa.
+                    <br>
+                    <b>Fundos Multimercado:</b> Combinação de renda fixa, ações, moedas e outros ativos.
+                    <br>
+                    <b>Fundos de Ações:</b> Investem em ações de empresas, com maior risco e potencial de retorno.
+                    <br>
+                    <b>Fundos Imobiliários (FIIs):</b> Investem em imóveis e pagam rendimentos periódicos.
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>Diversificação:</b> A principal vantagem é a diversificação, pois o fundo pode investir em vários ativos diferentes.
+                    <br>
+                    <b>Gestão Profissional:</b> Administrados por gestores especializados.
+                    <br>
+                    <b>Taxas:</b> Cobram taxas de administração e, em alguns casos, taxa de performance.
+                    <br>
+                    <b>Indicado para:</b> Quem prefere delegar a gestão dos investimentos a profissionais e busca diversificação com um único investimento.
+                    <br>
+                    <br>
+                    <b>Criptomoedas:</b> Moedas digitais, como Bitcoin e Ethereum, que operam em plataformas descentralizadas de blockchain.
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>Alta volatilidade:</b> O preço das criptomoedas pode variar drasticamente em curtos períodos.
+                    <br>
+                    <b>Potencial de crescimento:</b> Muitos veem nas criptomoedas um ativo de grande potencial de valorização.
+                    <br>
+                    <b>Descentralização:</b> Não são controladas por governos ou bancos centrais.
+                    <br>
+                    <b>Indicado para:</b> Investidores com perfil agressivo, que aceitam alta volatilidade e riscos em troca de retornos potencialmente elevados.
+                </p>
+            </div>
+            <div class="imagemDi">
+                <img src="img/fundoivestimento.jpg" alt="">
+            </div>
+            <div class="imagemEs">
+                <img src="img/previdencia.jpg" alt="">
+            </div>
+            <div class="texto2">
+                <p>
+                    
+                    <b>Previdencia Privada:</b> É um plano de longo prazo que visa complementar a aposentadoria. Existem dois tipos principais: PGBL (Plano Gerador de Benefício Livre) e VGBL (Vida Gerador de Benefício Livre).
+                    <br>
+                    <b>Características:</b>
+                    <br>
+                    <b>PGBL:</b> Indicado para quem faz a declaração completa de IR, pois permite deduzir até 12% da renda tributável
+                    <br>
+                    <b>VGBL:</b> Indicado para quem faz declaração simplificada, pois o imposto incide apenas sobre os rendimentos.
+                    <br>
+                    <b>Taxas:</b> Cobram taxas de administração e carregamento, que podem impactar a rentabilidade.
+                    <br>
+                    <b>Indicado para:</b> Planejamento de aposentadoria e objetivos de longo prazo
+                    <br>
+                    <br>
+                    <b>Debêntures:</b> Títulos de dívida emitidos por empresas para captar recursos no mercado. Ao investir em debêntures, você está emprestando dinheiro para a empresa, que, em troca, pagará juros.
+                    <br>
+                    <b>Risco maior:</b> Ao contrário de CDBs e LCIs, debêntures não têm garantia do FGC. O risco depende da saúde financeira da empresa emissora.
+                    <br>
+                    <b>Rentabilidade:</b> Geralmente, oferecem juros mais altos do que títulos de renda fixa bancária, compensando o maior risco.
+                </p>
             </div>
         </div>
     </div>
